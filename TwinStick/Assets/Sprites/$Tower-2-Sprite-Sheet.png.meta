@@ -1,0 +1,215 @@
+fileFormatVersion: 2
+guid: 980879aab7cc3e2479fd1d2a4e3be1b8
+timeCreated: 1463163275
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: $Tower-2-Sprite-Sheet_0
+    21300002: $Tower-2-Sprite-Sheet_1
+    21300004: $Tower-2-Sprite-Sheet_2
+    21300006: $Tower-2-Sprite-Sheet_3
+    21300008: $Tower-2-Sprite-Sheet_4
+    21300010: $Tower-2-Sprite-Sheet_5
+    21300012: $Tower-2-Sprite-Sheet_6
+    21300014: $Tower-2-Sprite-Sheet_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: $Tower-2-Sprite-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 137
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -21, y: 31}
+        - {x: -21, y: -31}
+        - {x: 12, y: -31}
+        - {x: 21, y: -21}
+        - {x: 21, y: 31}
+    - name: $Tower-2-Sprite-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 137
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 32}
+        - {x: -28, y: 32}
+        - {x: -39, y: 31}
+        - {x: -39, y: -9}
+        - {x: -26, y: -32}
+        - {x: 17, y: -32}
+        - {x: 39, y: -23}
+        - {x: 39, y: -2}
+    - name: $Tower-2-Sprite-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 137
+        width: 90
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 30.5}
+        - {x: -45, y: -9.5}
+        - {x: -33, y: -28.5}
+        - {x: -27, y: -30.5}
+        - {x: 17, y: -30.5}
+        - {x: 45, y: 2.5}
+        - {x: 45, y: 30.5}
+    - name: $Tower-2-Sprite-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 137
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 34}
+        - {x: -16, y: 31}
+        - {x: -34, y: 14}
+        - {x: -34, y: -9}
+        - {x: -29, y: -16}
+        - {x: -13, y: -34}
+        - {x: 22, y: -34}
+        - {x: 34, y: 0}
+        - {x: 34, y: 34}
+    - name: $Tower-2-Sprite-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 19
+        width: 45
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -10.5, y: 38}
+        - {x: -14.5, y: 37}
+        - {x: -22.5, y: 18}
+        - {x: -22.5, y: -38}
+        - {x: 19.5, y: -38}
+        - {x: 22.5, y: -37}
+        - {x: 22.5, y: 7}
+        - {x: 8.5, y: 38}
+    - name: $Tower-2-Sprite-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 19
+        width: 68
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 12, y: 33.5}
+        - {x: -34, y: 33.5}
+        - {x: -34, y: -4.5}
+        - {x: -31, y: -25.5}
+        - {x: -14, y: -33.5}
+        - {x: 23, y: -33.5}
+        - {x: 27, y: -29.5}
+        - {x: 34, y: -14.5}
+        - {x: 34, y: 20.5}
+    - name: $Tower-2-Sprite-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 19
+        width: 90
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45, y: 30.5}
+        - {x: -45, y: -21.5}
+        - {x: -42, y: -30.5}
+        - {x: 27, y: -30.5}
+        - {x: 32, y: -28.5}
+        - {x: 45, y: -13.5}
+        - {x: 45, y: 30.5}
+    - name: $Tower-2-Sprite-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 19
+        width: 78
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 32}
+        - {x: -39, y: -6}
+        - {x: -39, y: -20}
+        - {x: -38, y: -22}
+        - {x: -28, y: -21}
+        - {x: -7, y: -32}
+        - {x: 22, y: -32}
+        - {x: 39, y: -7}
+        - {x: 39, y: 32}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
