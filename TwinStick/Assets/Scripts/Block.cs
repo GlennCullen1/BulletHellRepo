@@ -11,10 +11,13 @@ public class Block : MonoBehaviour {
     public bool m_blocking = false;
     public float m_blockCooldown = 4.0f;
     public bool m_canBlock = true;
- 
+	public bool m_hasBlocked = false;
+
+	public int m_id;
 	// Use this for initialization
 	void Start () {
         m_anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+		m_id =  GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterRecord>().m_TeamID;
 	}
 	
 	// Update is called once per frame
@@ -25,13 +28,17 @@ public class Block : MonoBehaviour {
 
         //transform.parent.rotation = Quaternion.Euler(0, 0, 0);
         float angle;
-        angle = Mathf.Atan2(Input.GetAxis("Horizontal2"), Input.GetAxis("Vertical2")) * Mathf.Rad2Deg;
+
+       	 angle = Mathf.Atan2(Input.GetAxis("Horizontal2"), Input.GetAxis("Vertical2")) * Mathf.Rad2Deg;
      
 
         // Apply the transform to the 
+		if(Input.GetAxis("Horizontal2")!=0 || Input.GetAxis("Vertical2")!=0 )
+		{
         transform.parent.rotation = Quaternion.Euler(0, 0, -angle);
         //transform.LookAt(transform.parent.position);
-
+		}
+			
         if (Input.GetAxis(m_blockAxis) > 0 && m_canBlock)
         {
             ActivateBlock();
@@ -40,6 +47,7 @@ public class Block : MonoBehaviour {
 
     void ActivateBlock()
     {
+		m_hasBlocked = false;
         m_anim.SetTrigger("Block");
         StartCoroutine(BlockCooldown());       
     }
