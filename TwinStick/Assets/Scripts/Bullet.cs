@@ -58,10 +58,15 @@ public class Bullet : MonoBehaviour
 		//RaycastHit2D hit;
 		//hit = Physics2D.Raycast(transform.position, (Barrier.transform.position - transform.position));
 		//velocity =velocity -2* Vector2.Dot(velocity,hit.normal.normalized) * hit.normal.normalized-velocity;
-
+        /*
 		m_velocity = Barrier.transform.right.normalized * m_velocity.magnitude;
 		SetID (Barrier.GetComponent<Block>().m_id);
-		Debug.DrawRay(Barrier.transform.position,Barrier.transform.right);
+		Debug.DrawRay(Barrier.transform.position,Barrier.transform.right);*/
+
+        ReflectInfo reflectInfo = Barrier.GetComponent<ReflectProfile>().Reflect(gameObject);
+        m_velocity = reflectInfo.ReflectVector * m_velocity.magnitude;
+        SetID(reflectInfo.TeamId);
+
 	}
 
 	public void SetID(int id)
