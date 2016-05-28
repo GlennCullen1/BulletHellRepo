@@ -74,4 +74,6 @@ public class Bullet : MonoBehaviour
 		m_spriteRenderer.sprite = m_ColorTypes[id];
 		m_ID = id;
 	}
+
+
 }
