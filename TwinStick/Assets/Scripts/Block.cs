@@ -16,8 +16,8 @@ public class Block : MonoBehaviour {
 	public int m_id;
 	// Use this for initialization
 	void Start () {
-        m_anim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
-		m_id =  GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterRecord>().m_TeamID;
+        m_anim = GameObject.FindGameObjectWithTag("RedPlayer").GetComponent<Animator>();
+		m_id =  GameObject.FindGameObjectWithTag("RedPlayer").GetComponent<CharacterRecord>().m_TeamID;
 	}
 	
 	// Update is called once per frame
