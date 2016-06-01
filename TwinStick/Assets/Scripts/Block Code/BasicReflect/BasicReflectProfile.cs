@@ -12,7 +12,7 @@ public class BasicReflectProfile : ReflectProfile {
     {
         ReflectInfo returnValue = new ReflectInfo();
 
-        returnValue.ReflectVector = gameObject.transform.right.normalized;
+        returnValue.ReflectVector = gameObject.transform.right.normalized * m_VelocityScale;
         returnValue.TeamId = m_TeamID;
         return returnValue;
     }

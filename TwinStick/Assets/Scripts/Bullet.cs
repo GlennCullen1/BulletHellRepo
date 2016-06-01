@@ -37,6 +37,10 @@ public class Bullet : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+        if (coll.gameObject.tag == "Barrier")
+        {
+            Reflect(coll.gameObject);
+        }
     }
 
 	void OnTriggerStay2D(Collider2D coll)
@@ -44,12 +48,19 @@ public class Bullet : MonoBehaviour
 		if (coll.gameObject.tag == "Barrier")
 		{
 			Block block = coll.gameObject.GetComponent<Block>();
-			if(block.m_blocking )
-			{
-				// call reflect function. On completed version should be kept in block object for custom block behaviours
-				Reflect(coll.gameObject);
-				block.m_hasBlocked = true;
-			}
+            if (block)
+            {
+                if (block.m_blocking)
+                {
+                    // call reflect function. On completed version should be kept in block object for custom block behaviours
+                    Reflect(coll.gameObject);
+                    block.m_hasBlocked = true;
+                }
+            }
+            else
+            {
+                Reflect(coll.gameObject);
+            }
 		}
 	}
     

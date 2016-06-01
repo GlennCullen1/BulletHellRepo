@@ -62,14 +62,11 @@ public class MoveOnAxis : MonoBehaviour {
             m_rb2d.velocity = new Vector2(Mathf.Clamp(m_rb2d.velocity.x, -m_maxSpeed, m_maxSpeed),
                                           Mathf.Clamp(m_rb2d.velocity.y, -m_maxSpeed, m_maxSpeed));
 
-            if (Input.GetAxis(m_RollAxis) > 0 && m_canRoll)
-            {
-                Roll();
-            }
+            
         }
     }
 
-    private void Roll()
+    public void Roll()
     {
         m_roll = true;
         m_anim.SetTrigger("Roll");

@@ -8,7 +8,7 @@ using System.Collections;
 public abstract class ReflectProfile : MonoBehaviour {
 
     //variables
-    public int m_VelocityScale; //Percentage change of bullet after reflection
+    public float m_VelocityScale; //Percentage change of bullet after reflection
     public int m_TeamID; //team ID of the blocker;
 
     //methods

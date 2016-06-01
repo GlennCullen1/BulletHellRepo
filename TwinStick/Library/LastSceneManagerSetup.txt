@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/PlayerSprites.unity
+- path: Assets/Cricketer.unity
   isLoaded: 1
   isActive: 1

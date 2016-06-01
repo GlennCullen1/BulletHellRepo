@@ -39,13 +39,9 @@ public class Block : MonoBehaviour {
         //transform.LookAt(transform.parent.position);
 		}
 			
-        if (Input.GetAxis(m_blockAxis) > 0 && m_canBlock)
-        {
-            ActivateBlock();
-        }
 	}
 
-    void ActivateBlock()
+    public void ActivateBlock()
     {
 		m_hasBlocked = false;
         m_anim.SetTrigger("Block");
