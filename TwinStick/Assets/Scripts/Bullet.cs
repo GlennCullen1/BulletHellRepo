@@ -29,11 +29,11 @@ public class Bullet : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D coll)
     {
-        if (coll.gameObject.tag == "Player")
+        if (coll.gameObject.tag == "RedPlayer" || coll.gameObject.tag == "BluePlayer")
         {
 			if (!coll.gameObject.GetComponent<MoveOnAxis>().m_immune && coll.gameObject.GetComponent<CharacterRecord>().m_TeamID != m_ID )
             {
-                coll.gameObject.BroadcastMessage("Hit");
+                coll.gameObject.BroadcastMessage("Hit",(int)10);
                 Destroy(gameObject);
             }
         }
