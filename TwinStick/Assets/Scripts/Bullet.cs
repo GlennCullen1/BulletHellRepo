@@ -31,7 +31,7 @@ public class Bullet : MonoBehaviour
     {
         if (coll.gameObject.tag == "RedPlayer" || coll.gameObject.tag == "BluePlayer")
         {
-            if (!coll.gameObject.GetComponent<CharacterRecord>().m_immune && coll.gameObject.GetComponent<CharacterRecord>().m_TeamID != m_ID)
+            if (!coll.gameObject.GetComponent<CharacterRecord>().m_Immune && coll.gameObject.GetComponent<CharacterRecord>().m_TeamID != m_ID)
             {
                 coll.gameObject.BroadcastMessage("Hit",(int)10);
                 Destroy(gameObject);

@@ -5,8 +5,9 @@ public class Cricketer : GenericCharacter {
 
     public MoveOnAxis m_MovementControler;
     public Block m_BlockControler;
-    public GameObject m_WicketObject;
+	public CharacterInfo m_Character;
 
+	public GameObject m_WicketObject;
     private GameObject m_InstatiatedWicket;
     bool m_CanPlaceWicket = true;
 	// Use this for initialization

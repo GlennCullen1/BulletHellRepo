@@ -23,16 +23,18 @@ public class MoveOnAxis : MonoBehaviour {
     public float m_rollForce = 50f;
     public float m_rollCooldown = 4.0f;
     public bool m_canRoll = true;
-    public bool m_immune = false;
+    //public bool m_immune = false;
 
     //Component variables
     Animator m_anim;
     Rigidbody2D m_rb2d;
+	CharacterRecord m_Record;
 
     void Start()
     {
         m_anim = GetComponent<Animator>();
         m_rb2d = GetComponent<Rigidbody2D>();
+		m_Record = GetComponent<CharacterRecord>();
     }
 	// Update is called once per frame
 	void Update () {
