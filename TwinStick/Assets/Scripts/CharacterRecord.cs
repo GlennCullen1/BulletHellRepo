@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CharacterRecord : MonoBehaviour {
 
+	public int m_TeamID = 1;
 	// Use this for initialization
 	void Start () {
 	
