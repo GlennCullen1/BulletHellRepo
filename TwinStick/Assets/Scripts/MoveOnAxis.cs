@@ -5,7 +5,7 @@ using System.Collections;
 
 public enum RollType { Roll};
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Animator))]
 public class MoveOnAxis : MonoBehaviour {
 

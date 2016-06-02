@@ -12,6 +12,7 @@ public abstract class ReflectProfile : MonoBehaviour {
     public int m_TeamID; //team ID of the blocker;
 
     //methods
+    public abstract ReflectInfo Reflect(GameObject Bullet, Collision2D col);
     public abstract ReflectInfo Reflect(GameObject Bullet);
     
 }
