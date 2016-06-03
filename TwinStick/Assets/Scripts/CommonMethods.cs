@@ -16,7 +16,7 @@ public class CommonMethods : MonoBehaviour {
 			{
 				if(requireLOS)
 				{
-					RaycastHit2D testRay = Physics2D.Linecast(originObject.transform.position, obj.transform.position);
+					RaycastHit2D testRay = Physics2D.Linecast( obj.transform.position,originObject.transform.position);
 					//in sight
 					if(testRay.transform == obj.transform)
 					{
