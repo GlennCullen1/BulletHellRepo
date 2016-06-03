@@ -8,7 +8,7 @@ public class TeamManager : MonoBehaviour {
 	void Start () {
 		m_TeamLists = new GameObject[2][];
         m_TeamLists[0] = GameObject.FindGameObjectsWithTag("BluePlayer");
-        m_TeamLists[1] = GameObject.FindGameObjectsWithTag("Redlayer");
+        m_TeamLists[1] = GameObject.FindGameObjectsWithTag("RedPlayer");
 		Debug.Log("Test");
 	}
 	
